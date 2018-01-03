@@ -1,0 +1,10 @@
+c:\source\homework\myGame\myGame\bin\Debug\netcoreapp2.0\myGame.deps.json
+c:\source\homework\myGame\myGame\bin\Debug\netcoreapp2.0\myGame.runtimeconfig.json
+c:\source\homework\myGame\myGame\bin\Debug\netcoreapp2.0\myGame.runtimeconfig.dev.json
+c:\source\homework\myGame\myGame\bin\Debug\netcoreapp2.0\myGame.dll
+c:\source\homework\myGame\myGame\bin\Debug\netcoreapp2.0\myGame.pdb
+c:\source\homework\myGame\myGame\obj\Debug\netcoreapp2.0\myGame.csproj.CoreCompileInputs.cache
+c:\source\homework\myGame\myGame\obj\Debug\netcoreapp2.0\myGame.AssemblyInfoInputs.cache
+c:\source\homework\myGame\myGame\obj\Debug\netcoreapp2.0\myGame.AssemblyInfo.cs
+c:\source\homework\myGame\myGame\obj\Debug\netcoreapp2.0\myGame.dll
+c:\source\homework\myGame\myGame\obj\Debug\netcoreapp2.0\myGame.pdb
