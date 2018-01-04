@@ -53,9 +53,7 @@ namespace myGame
         }
 
         public static void OpenBroomCloset()
-
         {
-           
             Console.WriteLine("\n\nHoly cow there's someone passed out in the broom closet! Better wake him up. On closer inspection \nyou realize it's that creepy old guy Jimmy Casino that Tiffany brought. Nudge him with your foot, tell him to wake up. He doens't move. Try again, no dice. \nTurn on the light, discover he is dead, eyes wide open with a hole in the middle of his forehead.");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("PANIC!!!!");
@@ -66,7 +64,7 @@ namespace myGame
         internal static void OpenGarage()
         {
             Console.WriteLine("Open the garage door. You know this house like your own, there are extra car keys on the hook by the door, \ngrab them on your way out and run to the car and bail on the whole endeaver.");
-            Game.Die();
+            Die();
         }
         internal static void OpenGarageAfterBroom()
         {
@@ -79,25 +77,48 @@ namespace myGame
             else
                  if (input == "h" || input == "H")
                 Hall.LeaveHall();
-
             else
-
                 Console.WriteLine("Sorry, that's not possible, you can only press P, G or B. Should have learded to follow directions. You are DEAD");
         }
-
         internal static void OpenPantry()
         {
-            Console.WriteLine("Open the pantry door and something small and furry flies out at you,\ntaking a nip out of your arm. It's a squirrel, somehow trapped in there. \nIt runs around the room, out in the hall and disappears into the house. \nGreat, now you've been bitten, you should look for medical supplies. Check the broom closet");
-            OpenBroomCloset();
+            Console.WriteLine("Open the pantry door and something small and furry flies out at you,\ntaking a nip out of your arm. It's a squirrel, somehow trapped in there. \nIt runs around the room, out in the hall and disappears into the house. \nGreat, now you've been bitten, you should look for medical supplies. Check the broom closet (b) or look elsewhere (e)?");
+            string input = "";
+            input = Console.ReadLine();
+
+            if (input == "B" || input == "b")
+                Game.OpenBroomCloset();
+            else
+                BackToHall();
         }
-        internal static void Die()
+        internal static void BackToHall()
         {
-           Console.WriteLine("Bad, bad friend. You are DEAD");
+            Console.WriteLine("You are back in the entry hall; if you are looking for medical supplies, you have to go upstairs (U) otherwise you can go to the Living Room (L)");
+            string input = "";
+            input = Console.ReadLine();
+            if (input == "L" || input == "l")
+                Game.BackToHall();
+            else
+            if (input == "U" || input == "u")
+                GoUpStairs();
+            else
+
+                Die();
         }
 
+        private static void GoUpStairs()
+        {
+            throw new NotImplementedException();
+        }
 
-
+        public static void Die()
+        {
+            Console.WriteLine("Bad, bad friend. You are DEAD");
+        }
 
     }
+
 }
+
+
 
