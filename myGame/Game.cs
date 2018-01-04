@@ -22,7 +22,7 @@ namespace myGame
             Console.WriteLine("Yikes, the morning after! \n\nLast night you and your best friend held a small soiree at her family estate.\nWord spread and before you could do anything to stop it, it was an old fashioned blowout. \nSometime before the sun came up, you wandered off to get some sleep in the guest house\nand now it's morning and you have been texting and calling your friend, but she isn't answering. \nAt very least you know you have to help clean up, so you are on the front porch, \nwishing you could ditch the whole situation.\n");
             Console.WriteLine("What is your name?\n");
             MyName = Console.ReadLine();
-            Console.WriteLine($"\nWelcome to the monkey house {MyName}!\nDid you have a good time last night?\nWas it worth it? \nYou'd better get started cleaning this up, your friend's family will be home soon and this was NPOT a sanctioned activity!\n");
+            Console.WriteLine($"\nWelcome to the monkey house {MyName}!\nDid you have a good time last night?\nWas it worth it? \nYou'd better get started cleaning this up, your friend's family will be home soon and this was NOT a sanctioned activity!\n");
 
             Console.WriteLine("When you are ready, type Y to go into the house, N to ditch and go get a coffee.");
             Choice();
@@ -55,8 +55,8 @@ namespace myGame
         public static void OpenBroomCloset()
 
         {
-            Console.Clear();
-            Console.WriteLine("Holy cow there's someone passed out in the broom closet! Better wake him up. On closer inspection \nyou realize it's that creepy old guy Jimmy Casino that Tiffany brought. Nudge him with your foot, tell him to wake up. He doens't move. Try again, no dice. \nTurn on the light, discover he is dead, eyes wide open with a hole in the middle of his forehead.");
+           
+            Console.WriteLine("\n\nHoly cow there's someone passed out in the broom closet! Better wake him up. On closer inspection \nyou realize it's that creepy old guy Jimmy Casino that Tiffany brought. Nudge him with your foot, tell him to wake up. He doens't move. Try again, no dice. \nTurn on the light, discover he is dead, eyes wide open with a hole in the middle of his forehead.");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("PANIC!!!!");
             Console.ResetColor();

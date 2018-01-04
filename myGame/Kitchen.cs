@@ -21,7 +21,7 @@ namespace myGame
 
         public  static void EnterKitchen()
         {
-            Console.WriteLine("The kitchen is a great idea, after all there's so much garbage to pick up, you'd better get a trashbag or two.\nThe kitchen is exactly the mess you suspected, platters of mostly eaten food, empty bottles and cups,\nwhat appears to be a pan of burned pasta on the stove. Heavy sigh. There are three doors, one that leads to the garage (g),\none for the broom closet(b) and finally the pantry(p). Hmm, trash bags could be anywhere. Which door will you open?");
+            Console.WriteLine("The kitchen is a great idea, after all there's so much garbage to pick up, you'd better get a trashbag or two.\nThe kitchen is exactly the mess you suspected, platters of mostly eaten food, empty bottles and cups,\nwhat appears to be a pan of burned pasta on the stove. Heavy sigh. There are three doors, one that leads to the garage (g),\none for the broom closet(b) and finally the pantry(p). Hmm, trash bags could be anywhere. Which door will you open?\n");
             string input = "";
             input = Console.ReadLine();
             {
@@ -45,11 +45,11 @@ namespace myGame
 
         }
 
-        private void NewMethod()
-        {
-            Console.WriteLine("You decide to go to the kitchen, after all there's so much garbage to pick up, you'd better get a trashbag or two.\nThe kitchen is exactly the mess you suspected, platters of mostly eaten food, empty bottles and cups,\nwhat appears to be a pan of burned pasta on the stove. Heavy sigh. There are there doors, one that leads to the garage (g),\none for the broom closet(b) and finally the pantry(p). Hmm, trash bags could be anywhere. Which door will you open?");
+        //private void NewMethod()
+      //  {
+           // Console.WriteLine("You decide to go to the kitchen, after all there's so much garbage to pick up, you'd better get a trashbag or two.\nThe kitchen is exactly the mess you suspected, platters of mostly eaten food, empty bottles and cups,\nwhat appears to be a pan of burned pasta on the stove. Heavy sigh. There are there doors, one that leads to the garage (g),\none for the broom closet(b) and finally the pantry(p). Hmm, trash bags could be anywhere. Which door will you open?\n");
 
 
-        }
+       //}
     }
 }
